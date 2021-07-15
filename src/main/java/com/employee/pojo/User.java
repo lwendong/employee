@@ -25,6 +25,10 @@ public class User extends BaseModel {
     @TableField("password")
     private String password;
 
+
+    @TableField(exist = false)
+    private Employee employee;
+
     @TableField("isAdmin")
     private Boolean isAdmin = false;
 

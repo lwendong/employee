@@ -1,9 +1,6 @@
 package com.employee.pojo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableLogic;
+import com.baomidou.mybatisplus.annotation.*;
 import com.employee.pub.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,19 +16,25 @@ import java.util.Date;
 public class Employee extends BaseModel {
 
     @TableId(value = "id",type = IdType.AUTO)
-    private String id;
+    private Integer id;
 
     @TableField("code")
     private String code;
 
-    @TableField("dept_id")
-    private String deptId;
+    @TableField("dept_code")
+    private String deptCode;
+
+    @TableField(exist = false)
+    private String deptName;
+
+    @TableField(exist = false)
+    private String managerName;
 
     @TableField("name")
     private String name;
 
     @TableField("birthday")
-    private Date birthday;
+    private String birthday;
 
     @TableField("sex")
     private String sex;
@@ -40,7 +43,10 @@ public class Employee extends BaseModel {
     private String work;
 
     @TableField("work_date")
-    private Date workDate;
+    private String workDate;
+
+    @TableField(exist = false)
+    private String workDateString;
 
     @TableField("money")
     private String money;
@@ -48,8 +54,8 @@ public class Employee extends BaseModel {
     @TableField("money_b")
     private String moneyB;
 
-    @TableField("update_time")
-    private Date updateTime;
+    @TableField(value = "create_time",fill = FieldFill.INSERT)
+    private Date createTime;
 
     @TableLogic
     private Boolean isDeleted = false;

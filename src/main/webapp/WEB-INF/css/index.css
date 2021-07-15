@@ -164,7 +164,8 @@ i{
 .right_info_right .name{
 	display: block;
 	float: left;
-	letter-spacing: 5px;
+	overflow: hidden;
+	max-width: 110px;
 }
 .right_info_right .birthday{
 	display: block;

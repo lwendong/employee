@@ -12,6 +12,7 @@ public enum ResponseEnum {
     private String message;
 
     ResponseEnum(Boolean flag,Integer code,String message){
+        this.isSuccess = flag;
         this.code = code;
         this.message = message;
     }

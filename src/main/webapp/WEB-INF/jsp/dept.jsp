@@ -5,31 +5,31 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/dept.css"/>
     <script type="text/javascript" src="../public/jquery.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/dept.js"></script>
 </head>
 <body>
 <div class="inner_center_top">
     <div class="search">
         <i class="fa fa-search fa-lg"></i>
-        <input type="text" placeholder="Search "/>
+        <input type="text" placeholder="Search " class="search_input"/>
     </div>
 </div>
 
 <div class="inner_center_info">
     <div class="inner_center_info_list">
-        <div class="inner_center_info_dept" >
-            <span class="name">软件开发 部</span>
-            <span class="toe">1921.1.1</span>
-            <span class="code">6+55sd6f5+5s65+s</span>
-            <span class="mana">马二中</span>
-            <span class="count">37 人</span>
-        </div>
+<%--        <div class="inner_center_info_dept" >--%>
+<%--            <span class="name">软件开发 部</span>--%>
+<%--            <span class="toe">1921.1.1</span>--%>
+<%--            <span class="code">6+55sd6f5+5s65+s</span>--%>
+<%--            <span class="mana">马二中</span>--%>
+<%--            <span class="count">37 人</span>--%>
+<%--        </div>--%>
 
     </div>
-    <div class="inner_center_info_bottom">
-        <input type="button" value="上一页" class="previous"/>
-        <input type="button" value="下一页" class="next"/>
-    </div>
+<%--    <div class="inner_center_info_bottom">--%>
+<%--        <input type="button" value="上一页" class="previous"/>--%>
+<%--        <input type="button" value="下一页" class="next"/>--%>
+<%--    </div>--%>
 
 </div>
 </body>

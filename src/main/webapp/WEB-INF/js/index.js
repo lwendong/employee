@@ -6,10 +6,17 @@ $(function(){
 	var $addDept = $(".add_dept");
 	var $userInfo = $(".user_info");
 	var $iframe = $("#iframe");
-	var $li = $("li");
+	var $userId = $("#userId").val();
 
 	updateTime($date,$time);
 
+	$.ajax({
+		url:"/employee/getEmployeeByCode",
+		type:"post",
+		dataType:"json",
+		contentType: "application/json;charset=utf-8",
+		data:$userId
+	})
 
 	$queryDept.on("click",function(){
 		$(this).toggleClass("selected_bgc");
@@ -41,10 +48,7 @@ $(function(){
 		$iframe.attr("src","/employeeList");
 		$(this).children("*").toggleClass("select_color");
 	})
-
 	$queryDept.trigger("click");
-
-
 
 })
 function updateTime($date,$time){

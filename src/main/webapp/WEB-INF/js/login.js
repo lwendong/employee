@@ -4,7 +4,7 @@ $(function () {
     $("#login").on("click",() =>{
         var username = $username.val();
         var password = $password.val();
-        debugger
+
         $.ajax({
             url:"/user/login",
             type:"post",
@@ -14,7 +14,12 @@ $(function () {
                 username,password
             }),
             success:function (result){
-                window.location.href = "/index";
+                if(result.code === 200){
+                    window.location.href = "/index";
+                }else{
+                    alert("密码错误")
+                }
+
             }
         })
     });
