@@ -1,0 +1,90 @@
+.inner_center_info{
+	width: 100%;
+	height: 72%;
+	overflow-y: auto;
+}
+.inner_center_top {
+	width: 100%;
+	height: 25%;
+	text-align: center;
+}
+.inner_center_top .add_btn,.next,.previous{
+	margin-top: 20px;
+	width: 115px;
+	height: 30px;
+	border-radius: 20px;
+	letter-spacing: 3px;
+	background: #2F3035;
+	border: none;
+	outline: none;
+	color: #DBDBDB;
+	cursor: pointer;
+}
+.inner_center_top span{
+	display: block;
+	color: #DBDBDB;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin-top: 10px;
+	opacity: 0.8;
+}
+.inner_center_top .input{
+	width: 90%;
+	margin-top: 10px;
+	height: 25px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #383B44;
+	font-size: 20px;
+	text-align: center;
+	outline: none;
+	color: #DBDBDB;
+}
+.dept_div{
+	width: 30%;
+	height: 100px;
+	background: #2F3035;
+	margin: 15px 25px 0px 0px;
+	float: left;
+	border-radius: 50px;
+	text-align: center;
+}
+.list{
+	height: 120px;
+}
+.inner_center_info_list{
+	width: 100%;
+	height: 85%;
+}
+.inner_center_info_bottom{
+	text-align: center;
+	width: 100%;
+	height: 15%;
+}
+.inner_center_info_list span{
+	display: block;
+	font-size: 20px;
+	margin-top: 10px;
+	color: #DBDBDB;
+}
+.inner_center_info_list .name{
+	float: left;
+	margin-left: 25px;
+}
+.inner_center_info_list .toe{
+	float: right;
+	margin-right: 25px;
+}
+.inner_center_info_list .code{
+	float: left;
+	width: 100%;
+	margin-left: 25px;
+}
+.inner_center_info_list .mana{
+	float: left;
+	margin-left: 25px;
+}
+.inner_center_info_list .count{
+	float: right;
+	margin-right: 25px;
+}
