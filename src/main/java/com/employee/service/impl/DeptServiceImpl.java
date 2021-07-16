@@ -53,6 +53,7 @@ public class DeptServiceImpl implements DeptService {
             dept.setManaName(employeeService.getEmployeeByCode(dept.getManaId()).getName());
         });
         return depts;
+
     }
 
     @Override

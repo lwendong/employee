@@ -65,6 +65,13 @@ public class EmployeeServiceImpl implements EmployeeService {
         QueryWrapper<Employee> queryWrapper = new QueryWrapper<>();
         queryWrapper.like(StringUtils.isNotBlank(search), "name", search);
         Page<Employee> employeePage = employeeMapper.selectPage(page, queryWrapper);
+        List<Employee> records = employeePage.getRecords();
+        records.forEach(em ->{
+            Dept dept = deptService.queryDeptByCode(em.getDeptCode());
+            if(ObjectUtils.isNotEmpty(dept)){
+                em.setDeptName(dept.getName());
+            }
+        });
         return employeePage.getRecords();
     }
 
